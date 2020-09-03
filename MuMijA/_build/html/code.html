@@ -1,0 +1,2044 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title>Documentation &#8212; MuMijA 1.0.0 documentation</title>
+    <link href="_static/alabaster.css" rel="stylesheet" type="text/css"/>
+    <link href="_static/pygments.css" rel="stylesheet" type="text/css"/>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"
+            type="text/javascript"></script>
+    <script src="_static/jquery.js" type="text/javascript"></script>
+    <script src="_static/underscore.js" type="text/javascript"></script>
+    <script src="_static/doctools.js" type="text/javascript"></script>
+    <script src="_static/language_data.js" type="text/javascript"></script>
+    <link href="genindex.html" rel="index" title="Index"/>
+    <link href="search.html" rel="search" title="Search"/>
+
+    <link href="_static/custom.css" rel="stylesheet" type="text/css"/>
+
+
+    <meta content="width=device-width, initial-scale=0.9, maximum-scale=0.9" name="viewport"/>
+
+</head>
+<body>
+
+
+<div class="document">
+    <div class="documentwrapper">
+        <div class="bodywrapper">
+
+
+            <div class="body" role="main">
+
+                <div class="section" id="module-main_module">
+                    <span id="documentation"></span>
+                    <h1>Documentation<a class="headerlink" href="#module-main_module"
+                                        title="Permalink to this headline">¶</a></h1>
+                    <span class="target" id="module-actions.ActionManager"></span>
+                    <dl class="class">
+                        <dt id="actions.ActionManager.ActionManager">
+                            <em class="property">class </em><code class="sig-prename descclassname">actions.ActionManager.</code><code
+                                class="sig-name descname">ActionManager</code><a class="headerlink"
+                                                                                 href="#actions.ActionManager.ActionManager"
+                                                                                 title="Permalink to this definition">¶</a>
+                        </dt>
+                        <dd><p>Action manager, koristi se za pozivanje akcija poput add,remove, rename…</p>
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-actions.AddChildAction"></span>
+                    <dl class="class">
+                        <dt id="actions.AddChildAction.AddChildAction">
+                            <em class="property">class </em><code class="sig-prename descclassname">actions.AddChildAction.</code><code
+                                class="sig-name descname">AddChildAction</code><span class="sig-paren">(</span><em
+                                class="sig-param">parent</em><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                href="#actions.AddChildAction.AddChildAction"
+                                                                                                title="Permalink to this definition">¶</a>
+                        </dt>
+                        <dd><p>Klasa sadrzi akciju dodavanja child node na selektovanog roditelja u tree viewu</p>
+                            <dl class="method">
+                                <dt id="actions.AddChildAction.AddChildAction.actionCalled">
+                                    <code class="sig-name descname">actionCalled</code><span
+                                        class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                     href="#actions.AddChildAction.AddChildAction.actionCalled"
+                                                                                                     title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Dodaje child node</p>
+                                </dd>
+                            </dl>
+
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-actions.AddChildAtAction"></span>
+                    <dl class="class">
+                        <dt id="actions.AddChildAtAction.AddChildAtAction">
+                            <em class="property">class </em><code class="sig-prename descclassname">actions.AddChildAtAction.</code><code
+                                class="sig-name descname">AddChildAtAction</code><span class="sig-paren">(</span><em
+                                class="sig-param">parent</em><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                href="#actions.AddChildAtAction.AddChildAtAction"
+                                                                                                title="Permalink to this definition">¶</a>
+                        </dt>
+                        <dd><p>Klasa sadrzi akciju insertovanja child node na selektovanog siblinga u tree viewu</p>
+                            <dl class="method">
+                                <dt id="actions.AddChildAtAction.AddChildAtAction.actionCalled">
+                                    <code class="sig-name descname">actionCalled</code><span
+                                        class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                     href="#actions.AddChildAtAction.AddChildAtAction.actionCalled"
+                                                                                                     title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Dodaje sibling node, insertuje novi node izmedju selektovanog i njegovog
+                                    narednog</p>
+                                </dd>
+                            </dl>
+
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-actions.NewBookAction"></span>
+                    <dl class="class">
+                        <dt id="actions.NewBookAction.NewBookAction">
+                            <em class="property">class </em><code class="sig-prename descclassname">actions.NewBookAction.</code><code
+                                class="sig-name descname">NewBookAction</code><a class="headerlink"
+                                                                                 href="#actions.NewBookAction.NewBookAction"
+                                                                                 title="Permalink to this definition">¶</a>
+                        </dt>
+                        <dd><p>Klasa sadrzi akciju dodavanja book node-a na workspace</p>
+                            <dl class="method">
+                                <dt id="actions.NewBookAction.NewBookAction.actionCalled">
+                                    <code class="sig-name descname">actionCalled</code><span
+                                        class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                     href="#actions.NewBookAction.NewBookAction.actionCalled"
+                                                                                                     title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Prikazuje dijalog za unos imena nove knjige, kreira novu instancu knjige sa
+                                    unetim imenom</p>
+                                </dd>
+                            </dl>
+
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-actions.RemoveChildAction"></span>
+                    <dl class="class">
+                        <dt id="actions.RemoveChildAction.RemoveChildAction">
+                            <em class="property">class </em><code class="sig-prename descclassname">actions.RemoveChildAction.</code><code
+                                class="sig-name descname">RemoveChildAction</code><span class="sig-paren">(</span><em
+                                class="sig-param">parent</em><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                href="#actions.RemoveChildAction.RemoveChildAction"
+                                                                                                title="Permalink to this definition">¶</a>
+                        </dt>
+                        <dd><p>Klasa sadrzi metoda za logicko brisanje node-a</p>
+                            <dl class="method">
+                                <dt id="actions.RemoveChildAction.RemoveChildAction.remove">
+                                    <code class="sig-name descname">remove</code><span class="sig-paren">(</span><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#actions.RemoveChildAction.RemoveChildAction.remove"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Logicki brise trenutno selektovan node</p>
+                                </dd>
+                            </dl>
+
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-actions.RenameNodeAction"></span>
+                    <dl class="class">
+                        <dt id="actions.RenameNodeAction.RenameNodeAction">
+                            <em class="property">class </em><code class="sig-prename descclassname">actions.RenameNodeAction.</code><code
+                                class="sig-name descname">RenameNodeAction</code><span class="sig-paren">(</span><em
+                                class="sig-param">parent</em><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                href="#actions.RenameNodeAction.RenameNodeAction"
+                                                                                                title="Permalink to this definition">¶</a>
+                        </dt>
+                        <dd><p>Klasa sadrzi metodu za menjanje imena node-a</p>
+                            <dl class="method">
+                                <dt id="actions.RenameNodeAction.RenameNodeAction.rename">
+                                    <code class="sig-name descname">rename</code><span class="sig-paren">(</span><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#actions.RenameNodeAction.RenameNodeAction.rename"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Prikazuje dijalog za unos novog imena node-a, menja ime node-a</p>
+                                </dd>
+                            </dl>
+
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-actions.AddChildBefore"></span>
+                    <dl class="class">
+                        <dt id="actions.AddChildBefore.AddChildBeforeAction">
+                            <em class="property">class </em><code class="sig-prename descclassname">actions.AddChildBefore.</code><code
+                                class="sig-name descname">AddChildBeforeAction</code><span class="sig-paren">(</span><em
+                                class="sig-param">parent</em><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                href="#actions.AddChildBefore.AddChildBeforeAction"
+                                                                                                title="Permalink to this definition">¶</a>
+                        </dt>
+                        <dd><p>Klasa sadrzi akciju insertovanja child node na selektovanog siblinga u tree viewu</p>
+                            <dl class="method">
+                                <dt id="actions.AddChildBefore.AddChildBeforeAction.actionCalled">
+                                    <code class="sig-name descname">actionCalled</code><span
+                                        class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                     href="#actions.AddChildBefore.AddChildBeforeAction.actionCalled"
+                                                                                                     title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Dodaje sibling node, insertuje novi node izmedju selektovanog i njegovog
+                                    prethodnog</p>
+                                </dd>
+                            </dl>
+
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-actions.DeleteAction"></span>
+                    <dl class="class">
+                        <dt id="actions.DeleteAction.DeleteAction">
+                            <em class="property">class </em><code class="sig-prename descclassname">actions.DeleteAction.</code><code
+                                class="sig-name descname">DeleteAction</code><a class="headerlink"
+                                                                                href="#actions.DeleteAction.DeleteAction"
+                                                                                title="Permalink to this definition">¶</a>
+                        </dt>
+                        <dd><p>Klasa sadrzi metodu za brisanje knjige iz memorije</p>
+                            <dl class="method">
+                                <dt id="actions.DeleteAction.DeleteAction.actionCalled">
+                                    <code class="sig-name descname">actionCalled</code><span
+                                        class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                     href="#actions.DeleteAction.DeleteAction.actionCalled"
+                                                                                                     title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Brise knjigu sa fizicke memorije ako knjiga sa takvim imenom postoji, ako ne
+                                    postoji onda upozori korisnika o tome</p>
+                                </dd>
+                            </dl>
+
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-actions.file_handler"></span>
+                    <dl class="class">
+                        <dt id="actions.file_handler.FileHandler">
+                            <em class="property">class </em><code class="sig-prename descclassname">actions.file_handler.</code><code
+                                class="sig-name descname">FileHandler</code><a class="headerlink"
+                                                                               href="#actions.file_handler.FileHandler"
+                                                                               title="Permalink to this definition">¶</a>
+                        </dt>
+                        <dd><p>Omogucuje rad sa fajlovima</p>
+                            <dl class="method">
+                                <dt id="actions.file_handler.FileHandler.createDirectory">
+                                    <code class="sig-name descname">createDirectory</code><span
+                                        class="sig-paren">(</span><em class="sig-param">path</em>, <em
+                                        class="sig-param">name</em><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                      href="#actions.file_handler.FileHandler.createDirectory"
+                                                                                                      title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Metoda kreira direktorijum sa zadatim imenom u zadatom direktorijumu</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>path: putanje do direktorijuma u kom se kreira direktorijum
+                                            name: ime direktorijuma koji ce biti kreiran</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="actions.file_handler.FileHandler.createFile">
+                                    <code class="sig-name descname">createFile</code><span class="sig-paren">(</span><em
+                                        class="sig-param">path</em>, <em class="sig-param">name</em><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#actions.file_handler.FileHandler.createFile"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Metoda kreira fajl sa zadatim imenom u zadatom direktorijumu</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>path: putanje do direktorijuma u kom se kreira fajl
+                                            name: ime fajla koji ce biti kreiran</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="actions.file_handler.FileHandler.getChildList">
+                                    <code class="sig-name descname">getChildList</code><span
+                                        class="sig-paren">(</span><em class="sig-param">path</em><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#actions.file_handler.FileHandler.getChildList"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Metoda vraca listu svih fajla koji se nalaze u direktorijumu</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>path: putanja do direktorijuma</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="actions.file_handler.FileHandler.getType">
+                                    <code class="sig-name descname">getType</code><span class="sig-paren">(</span><em
+                                        class="sig-param">path</em><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                      href="#actions.file_handler.FileHandler.getType"
+                                                                                                      title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Metoda vraca tip fajla koji se nalazi na zadatoj putanji</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>path putanja do fajla</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="actions.file_handler.FileHandler.removeDirectory">
+                                    <code class="sig-name descname">removeDirectory</code><span
+                                        class="sig-paren">(</span><em class="sig-param">path</em>, <em
+                                        class="sig-param">name</em><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                      href="#actions.file_handler.FileHandler.removeDirectory"
+                                                                                                      title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Metoda brise direktorjium sa zadatim imenom u zadatom direktorijumu</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>path: putanje do direktorijuma u kom se brise direktorijum
+                                            name: ime direktorijuma koji ce biti obrisan</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="actions.file_handler.FileHandler.removeFile">
+                                    <code class="sig-name descname">removeFile</code><span class="sig-paren">(</span><em
+                                        class="sig-param">path</em>, <em class="sig-param">name</em><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#actions.file_handler.FileHandler.removeFile"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Metoda brise fajl sa zadatim imenom u zadatom direktorijumu</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>path: putanje do direktorijuma u kom se brise fajl
+                                            name: ime fajla koji ce biti obrisan</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="actions.file_handler.FileHandler.rename">
+                                    <code class="sig-name descname">rename</code><span class="sig-paren">(</span><em
+                                        class="sig-param">path</em>, <em class="sig-param">oldName</em>, <em
+                                        class="sig-param">newName</em><span class="sig-paren">)</span><a
+                                        class="headerlink" href="#actions.file_handler.FileHandler.rename"
+                                        title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Metoda menja ime fajla sa zadatim imenom u zadatom direktorijumu</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>path: putanje do direktorijuma u kom se menja ime zadatog fajla
+                                            oldName: ime fajla cije ce ime biti promenjeno
+                                            newName: novo ime fajla</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-actions.ImportBookAction"></span>
+                    <dl class="class">
+                        <dt id="actions.ImportBookAction.ImportBookAction">
+                            <em class="property">class </em><code class="sig-prename descclassname">actions.ImportBookAction.</code><code
+                                class="sig-name descname">ImportBookAction</code><a class="headerlink"
+                                                                                    href="#actions.ImportBookAction.ImportBookAction"
+                                                                                    title="Permalink to this definition">¶</a>
+                        </dt>
+                        <dd><p>Klasa sadrzi metodu importovanja selektovane knjige</p>
+                            <dl class="method">
+                                <dt id="actions.ImportBookAction.ImportBookAction.actionCalled">
+                                    <code class="sig-name descname">actionCalled</code><span
+                                        class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                     href="#actions.ImportBookAction.ImportBookAction.actionCalled"
+                                                                                                     title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Importuje selektovanu knjigu sa ekstenzijom ‘.pkl’</p>
+                                </dd>
+                            </dl>
+
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-actions.RenameAction"></span>
+                    <dl class="class">
+                        <dt id="actions.RenameAction.RenameAction">
+                            <em class="property">class </em><code class="sig-prename descclassname">actions.RenameAction.</code><code
+                                class="sig-name descname">RenameAction</code><a class="headerlink"
+                                                                                href="#actions.RenameAction.RenameAction"
+                                                                                title="Permalink to this definition">¶</a>
+                        </dt>
+                        <dd><p>Klasa sadrzi metodu za preimenovanje knjige</p>
+                            <dl class="method">
+                                <dt id="actions.RenameAction.RenameAction.actionCalled">
+                                    <code class="sig-name descname">actionCalled</code><span
+                                        class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                     href="#actions.RenameAction.RenameAction.actionCalled"
+                                                                                                     title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Prikazuje dijalog za unos novog imena knjige, preimenuje trenutno otvorenu knjigu
+                                    u uneto ime</p>
+                                </dd>
+                            </dl>
+
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-actions.SaveAction"></span>
+                    <dl class="class">
+                        <dt id="actions.SaveAction.SaveAction">
+                            <em class="property">class </em><code
+                                class="sig-prename descclassname">actions.SaveAction.</code><code
+                                class="sig-name descname">SaveAction</code><a class="headerlink"
+                                                                              href="#actions.SaveAction.SaveAction"
+                                                                              title="Permalink to this definition">¶</a>
+                        </dt>
+                        <dd><p>Klasa sadrzi metodu za cuvanje knjige u fizicku memoriju</p>
+                            <dl class="method">
+                                <dt id="actions.SaveAction.SaveAction.actionCalled">
+                                    <code class="sig-name descname">actionCalled</code><span
+                                        class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                     href="#actions.SaveAction.SaveAction.actionCalled"
+                                                                                                     title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Prikazuje dijalog za biranje foldera i cuva instancu knjige u selektovan
+                                    folder</p>
+                                </dd>
+                            </dl>
+
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-actions.SaveAsAction"></span>
+                    <dl class="class">
+                        <dt id="actions.SaveAsAction.SaveAsAction">
+                            <em class="property">class </em><code class="sig-prename descclassname">actions.SaveAsAction.</code><code
+                                class="sig-name descname">SaveAsAction</code><a class="headerlink"
+                                                                                href="#actions.SaveAsAction.SaveAsAction"
+                                                                                title="Permalink to this definition">¶</a>
+                        </dt>
+                        <dd><p>Klasa sadrzi metodu za cuvanje knjige uz promenu njenog imena u fizicku memoriju</p>
+                            <dl class="method">
+                                <dt id="actions.SaveAsAction.SaveAsAction.actionCalled">
+                                    <code class="sig-name descname">actionCalled</code><span
+                                        class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                     href="#actions.SaveAsAction.SaveAsAction.actionCalled"
+                                                                                                     title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Prikazuje dijalog za unos imena po kome ce knjiga biti sacuvana, zatim prikazuje
+                                    dijalog za biranje foldera i cuva instancu knjige u selektovan folder</p>
+                                </dd>
+                            </dl>
+
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-gui.EditMenu"></span>
+                    <dl class="class">
+                        <dt id="gui.EditMenu.EditMenu">
+                            <em class="property">class </em><code class="sig-prename descclassname">gui.EditMenu.</code><code
+                                class="sig-name descname">EditMenu</code><a class="headerlink"
+                                                                            href="#gui.EditMenu.EditMenu"
+                                                                            title="Permalink to this definition">¶</a>
+                        </dt>
+                        <dd><p>Gui komponenta EditMenu-a</p>
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-gui.FileMenu"></span>
+                    <dl class="class">
+                        <dt id="gui.FileMenu.FileMenu">
+                            <em class="property">class </em><code class="sig-prename descclassname">gui.FileMenu.</code><code
+                                class="sig-name descname">FileMenu</code><a class="headerlink"
+                                                                            href="#gui.FileMenu.FileMenu"
+                                                                            title="Permalink to this definition">¶</a>
+                        </dt>
+                        <dd><p>Gui komponenta FileMenu-a</p>
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-gui.HelpMenu"></span>
+                    <dl class="class">
+                        <dt id="gui.HelpMenu.HelpMenu">
+                            <em class="property">class </em><code class="sig-prename descclassname">gui.HelpMenu.</code><code
+                                class="sig-name descname">HelpMenu</code><a class="headerlink"
+                                                                            href="#gui.HelpMenu.HelpMenu"
+                                                                            title="Permalink to this definition">¶</a>
+                        </dt>
+                        <dd><p>Gui komponenta HelpMenu-a</p>
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-gui.MainWindow"></span>
+                    <dl class="class">
+                        <dt id="gui.MainWindow.MainWindow">
+                            <em class="property">class </em><code
+                                class="sig-prename descclassname">gui.MainWindow.</code><code class="sig-name descname">MainWindow</code><a
+                                class="headerlink" href="#gui.MainWindow.MainWindow"
+                                title="Permalink to this definition">¶</a></dt>
+                        <dd><p>Gui komponenta MainWindow</p>
+                            <dl class="method">
+                                <dt id="gui.MainWindow.MainWindow.closeMyTab">
+                                    <code class="sig-name descname">closeMyTab</code><span class="sig-paren">(</span><em
+                                        class="sig-param">index</em><span class="sig-paren">)</span><a
+                                        class="headerlink" href="#gui.MainWindow.MainWindow.closeMyTab"
+                                        title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Omogucava zatvaranje tab-a</p>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="gui.MainWindow.MainWindow.init_menu_bar">
+                                    <code class="sig-name descname">init_menu_bar</code><span class="sig-paren">(</span><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#gui.MainWindow.MainWindow.init_menu_bar"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Inicijalizuje menu bar</p>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="gui.MainWindow.MainWindow.init_toolbar">
+                                    <code class="sig-name descname">init_toolbar</code><span
+                                        class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                     href="#gui.MainWindow.MainWindow.init_toolbar"
+                                                                                                     title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Inicijalizuje toolbar</p>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="gui.MainWindow.MainWindow.init_tree_main_widget">
+                                    <code class="sig-name descname">init_tree_main_widget</code><span class="sig-paren">(</span><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#gui.MainWindow.MainWindow.init_tree_main_widget"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Inicijalizuje layout main window-a, layout strane, tree, tabove, dugmadi i
+                                    labele</p>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="gui.MainWindow.MainWindow.newTab">
+                                    <code class="sig-name descname">newTab</code><span class="sig-paren">(</span><em
+                                        class="sig-param">root</em><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                      href="#gui.MainWindow.MainWindow.newTab"
+                                                                                                      title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Inicijalizuje novi tab</p>
+                                    <dl class="simple">
+                                        <dt>Return:</dt>
+                                        <dd><p>Objekat book</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-gui.MyToolbar"></span>
+                    <dl class="class">
+                        <dt id="gui.MyToolbar.MyToolbar">
+                            <em class="property">class </em><code
+                                class="sig-prename descclassname">gui.MyToolbar.</code><code class="sig-name descname">MyToolbar</code><span
+                                class="sig-paren">(</span><em class="sig-param">parent</em><span
+                                class="sig-paren">)</span><a class="headerlink" href="#gui.MyToolbar.MyToolbar"
+                                                             title="Permalink to this definition">¶</a></dt>
+                        <dd><p>Gui komponenta Toolbar-a</p>
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-gui.MyPictureEdit"></span>
+                    <dl class="class">
+                        <dt id="gui.MyPictureEdit.MyPictureEdit">
+                            <em class="property">class </em><code
+                                class="sig-prename descclassname">gui.MyPictureEdit.</code><code
+                                class="sig-name descname">MyPictureEdit</code><span class="sig-paren">(</span><em
+                                class="sig-param">object</em><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                href="#gui.MyPictureEdit.MyPictureEdit"
+                                                                                                title="Permalink to this definition">¶</a>
+                        </dt>
+                        <dd><p>Labela sa slikom koja se dodaje na stranu</p>
+                            <dl class="simple">
+                                <dt>Attributes:</dt>
+                                <dd><p>object: slika koja se dodaje u labelu</p>
+                                </dd>
+                            </dl>
+                            <dl class="method">
+                                <dt id="gui.MyPictureEdit.MyPictureEdit.mouseDoubleClickEvent">
+                                    <code class="sig-name descname">mouseDoubleClickEvent</code><span class="sig-paren">(</span><em
+                                        class="sig-param">event</em><span class="sig-paren">)</span><a
+                                        class="headerlink" href="#gui.MyPictureEdit.MyPictureEdit.mouseDoubleClickEvent"
+                                        title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Rewrite mouseDoubleClickEvent-a, otvara dijalog za editovanje slike i update-uje
+                                    status bar na trenutno stanje programa</p>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="gui.MyPictureEdit.MyPictureEdit.setPosition">
+                                    <code class="sig-name descname">setPosition</code><span
+                                        class="sig-paren">(</span><em class="sig-param">position</em><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#gui.MyPictureEdit.MyPictureEdit.setPosition"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Postavlja labelu na poziciju slike u main window-u</p>
+                                </dd>
+                            </dl>
+
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-gui.MyTextEdit"></span>
+                    <dl class="class">
+                        <dt id="gui.MyTextEdit.MyTextEdit">
+                            <em class="property">class </em><code
+                                class="sig-prename descclassname">gui.MyTextEdit.</code><code class="sig-name descname">MyTextEdit</code><span
+                                class="sig-paren">(</span><em class="sig-param">object</em><span
+                                class="sig-paren">)</span><a class="headerlink" href="#gui.MyTextEdit.MyTextEdit"
+                                                             title="Permalink to this definition">¶</a></dt>
+                        <dd><p>Text box koji se dodaje kao komponenta strane</p>
+                            <dl class="simple">
+                                <dt>Attributes:</dt>
+                                <dd><p>object: tekst koji se dodaje u text box</p>
+                                </dd>
+                            </dl>
+                            <dl class="method">
+                                <dt id="gui.MyTextEdit.MyTextEdit.mouseDoubleClickEvent">
+                                    <code class="sig-name descname">mouseDoubleClickEvent</code><span class="sig-paren">(</span><em
+                                        class="sig-param">event</em><span class="sig-paren">)</span><a
+                                        class="headerlink" href="#gui.MyTextEdit.MyTextEdit.mouseDoubleClickEvent"
+                                        title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Rewrite mouseDoubleClickEvent-a, otvara dijalog za editovanje text-a i update-uje
+                                    status bar na trenutno stanje programa</p>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="gui.MyTextEdit.MyTextEdit.mouseMoveEvent">
+                                    <code class="sig-name descname">mouseMoveEvent</code><span
+                                        class="sig-paren">(</span><em class="sig-param">event</em><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#gui.MyTextEdit.MyTextEdit.mouseMoveEvent"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Rewrite mouseMoveEvent-a tako da se text box moze pomerati, i postavljanje
+                                    poziciju text-a u slucaju da se text box pomeri</p>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="gui.MyTextEdit.MyTextEdit.mousePressEvent">
+                                    <code class="sig-name descname">mousePressEvent</code><span
+                                        class="sig-paren">(</span><em class="sig-param">event</em><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#gui.MyTextEdit.MyTextEdit.mousePressEvent"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Rewrite mousePressEvent-a tako da se text box moze pomerati</p>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="gui.MyTextEdit.MyTextEdit.setObjectText">
+                                    <code class="sig-name descname">setObjectText</code><span class="sig-paren">(</span><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#gui.MyTextEdit.MyTextEdit.setObjectText"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Postavlja text-u kontekst text box-a</p>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="gui.MyTextEdit.MyTextEdit.setPosition">
+                                    <code class="sig-name descname">setPosition</code><span
+                                        class="sig-paren">(</span><em class="sig-param">position</em><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#gui.MyTextEdit.MyTextEdit.setPosition"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Postavlja text box na poziciju text-a u main window-u</p>
+                                </dd>
+                            </dl>
+
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-gui.PictureEditDialog"></span>
+                    <dl class="class">
+                        <dt id="gui.PictureEditDialog.PictureEditDialog">
+                            <em class="property">class </em><code class="sig-prename descclassname">gui.PictureEditDialog.</code><code
+                                class="sig-name descname">PictureEditDialog</code><span class="sig-paren">(</span><em
+                                class="sig-param">object</em><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                href="#gui.PictureEditDialog.PictureEditDialog"
+                                                                                                title="Permalink to this definition">¶</a>
+                        </dt>
+                        <dd><p>Dijalog za editovanje slike</p>
+                            <dl class="simple">
+                                <dt>Attributes:</dt>
+                                <dd><p>object: slika koja se edituje</p>
+                                </dd>
+                            </dl>
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-gui.PictureEditLabel"></span>
+                    <dl class="class">
+                        <dt id="gui.PictureEditLabel.PictureEditLabel">
+                            <em class="property">class </em><code class="sig-prename descclassname">gui.PictureEditLabel.</code><code
+                                class="sig-name descname">PictureEditLabel</code><span class="sig-paren">(</span><em
+                                class="sig-param">object</em><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                href="#gui.PictureEditLabel.PictureEditLabel"
+                                                                                                title="Permalink to this definition">¶</a>
+                        </dt>
+                        <dd><p>Labela sa slikom koja se edituje</p>
+                            <dl class="simple">
+                                <dt>Attributes:</dt>
+                                <dd><p>object: slika koja se edituje</p>
+                                </dd>
+                            </dl>
+                            <dl class="method">
+                                <dt id="gui.PictureEditLabel.PictureEditLabel.mouseMoveEvent">
+                                    <code class="sig-name descname">mouseMoveEvent</code><span
+                                        class="sig-paren">(</span><em class="sig-param">event</em><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#gui.PictureEditLabel.PictureEditLabel.mouseMoveEvent"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Rewrite mouseMoveEvent-a tako da se labela moze pomerati, i postavljanje poziciju
+                                    slike u slucaju da se labela pomeri</p>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="gui.PictureEditLabel.PictureEditLabel.mousePressEvent">
+                                    <code class="sig-name descname">mousePressEvent</code><span
+                                        class="sig-paren">(</span><em class="sig-param">event</em><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#gui.PictureEditLabel.PictureEditLabel.mousePressEvent"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Rewrite mousePressEvent-a tako da se labela moze pomerati</p>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="gui.PictureEditLabel.PictureEditLabel.setPosition">
+                                    <code class="sig-name descname">setPosition</code><span
+                                        class="sig-paren">(</span><em class="sig-param">position</em><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#gui.PictureEditLabel.PictureEditLabel.setPosition"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Postavlja labelu na poziciju slike u main window-u</p>
+                                </dd>
+                            </dl>
+
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-gui.PictureEditWindow"></span>
+                    <dl class="class">
+                        <dt id="gui.PictureEditWindow.PictureEditWindow">
+                            <em class="property">class </em><code class="sig-prename descclassname">gui.PictureEditWindow.</code><code
+                                class="sig-name descname">PictureEditWindow</code><span class="sig-paren">(</span><em
+                                class="sig-param">object</em><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                href="#gui.PictureEditWindow.PictureEditWindow"
+                                                                                                title="Permalink to this definition">¶</a>
+                        </dt>
+                        <dd><p>Prozor koji predstavlja glavni editor slike</p>
+                            <dl class="simple">
+                                <dt>Attributes:</dt>
+                                <dd><p>pictureToSend: slika koja se edituje</p>
+                                </dd>
+                            </dl>
+                            <dl class="method">
+                                <dt id="gui.PictureEditWindow.PictureEditWindow.closeA">
+                                    <code class="sig-name descname">closeA</code><span class="sig-paren">(</span><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#gui.PictureEditWindow.PictureEditWindow.closeA"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Metoda koja zatvara otvorenu sliku u edit prozoru, i upozorava korisnika da ucita
+                                    novu</p>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="gui.PictureEditWindow.PictureEditWindow.createMenuBar">
+                                    <code class="sig-name descname">createMenuBar</code><span class="sig-paren">(</span><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#gui.PictureEditWindow.PictureEditWindow.createMenuBar"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Kreira meni bar ovog prozora</p>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="gui.PictureEditWindow.PictureEditWindow.loadA">
+                                    <code class="sig-name descname">loadA</code><span class="sig-paren">(</span><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#gui.PictureEditWindow.PictureEditWindow.loadA"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Metoda koja nudi dijalog za ucitavanje nove slike i zatim je doda u edit
+                                    prozor</p>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="gui.PictureEditWindow.PictureEditWindow.updateWindow">
+                                    <code class="sig-name descname">updateWindow</code><span
+                                        class="sig-paren">(</span><em class="sig-param">picture</em><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#gui.PictureEditWindow.PictureEditWindow.updateWindow"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Refresh edit prozora na prosledjenu sliku</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>picture(Picture): slika na koja se postavlja u edit prozor</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-gui.TextEditDialog"></span>
+                    <dl class="class">
+                        <dt id="gui.TextEditDialog.TextEditDialog">
+                            <em class="property">class </em><code
+                                class="sig-prename descclassname">gui.TextEditDialog.</code><code
+                                class="sig-name descname">TextEditDialog</code><span class="sig-paren">(</span><em
+                                class="sig-param">object</em><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                href="#gui.TextEditDialog.TextEditDialog"
+                                                                                                title="Permalink to this definition">¶</a>
+                        </dt>
+                        <dd><p>Dijalog za editovanje text-a</p>
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-gui.TextEditWindow"></span>
+                    <dl class="class">
+                        <dt id="gui.TextEditWindow.TextEditWindow">
+                            <em class="property">class </em><code
+                                class="sig-prename descclassname">gui.TextEditWindow.</code><code
+                                class="sig-name descname">TextEditWindow</code><span class="sig-paren">(</span><em
+                                class="sig-param">object</em><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                href="#gui.TextEditWindow.TextEditWindow"
+                                                                                                title="Permalink to this definition">¶</a>
+                        </dt>
+                        <dd><p>Glavni prozor u kome se edituje text</p>
+                            <dl class="simple">
+                                <dt>Attributes:</dt>
+                                <dd><p>mainEdit: deo glavnog prozora u kome se dodaje i menja text
+                                    textToSend: text koji je prikazan u mainEdit delu glavnog prostora</p>
+                                </dd>
+                            </dl>
+                            <dl class="method">
+                                <dt id="gui.TextEditWindow.TextEditWindow.colorChanged">
+                                    <code class="sig-name descname">colorChanged</code><span
+                                        class="sig-paren">(</span><em class="sig-param">colour</em><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#gui.TextEditWindow.TextEditWindow.colorChanged"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Metoda koja pretvara ikonicu izbora boja u izabranu boju sa palete boja</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>colour: izabrana boja sa palete boja</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="gui.TextEditWindow.TextEditWindow.createMenuBar">
+                                    <code class="sig-name descname">createMenuBar</code><span class="sig-paren">(</span><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#gui.TextEditWindow.TextEditWindow.createMenuBar"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Kreira menu bar deo glavnog prozora</p>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="gui.TextEditWindow.TextEditWindow.createToolBar">
+                                    <code class="sig-name descname">createToolBar</code><span class="sig-paren">(</span><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#gui.TextEditWindow.TextEditWindow.createToolBar"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Kreira tool bar deo glavnog prozora</p>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="gui.TextEditWindow.TextEditWindow.mergeFormatOnWordOrSelection">
+                                    <code class="sig-name descname">mergeFormatOnWordOrSelection</code><span
+                                        class="sig-paren">(</span><em class="sig-param">format</em><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#gui.TextEditWindow.TextEditWindow.mergeFormatOnWordOrSelection"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Metoda koja uzima selektovani deo text-a, odnosno rec ispod kursora ako nista
+                                    nije selektovano, i pravi adekvatne promene nad njim</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>format: format text-a u odnosu na koji se prave adekvatne promene</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="gui.TextEditWindow.TextEditWindow.setTextToSend">
+                                    <code class="sig-name descname">setTextToSend</code><span class="sig-paren">(</span><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#gui.TextEditWindow.TextEditWindow.setTextToSend"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Metoda koja postavlja text text box delu stranice ukoliko se nacini promena
+                                    text-a</p>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="gui.TextEditWindow.TextEditWindow.textBold">
+                                    <code class="sig-name descname">textBold</code><span class="sig-paren">(</span><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#gui.TextEditWindow.TextEditWindow.textBold"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Metoda za pretvaranje dela text-a u bold format</p>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="gui.TextEditWindow.TextEditWindow.textColor">
+                                    <code class="sig-name descname">textColor</code><span
+                                        class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                     href="#gui.TextEditWindow.TextEditWindow.textColor"
+                                                                                                     title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Metoda koja nudi izbor boja sa palete boja, a zatim pretvara deo text-a u
+                                    izabranu boju</p>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="gui.TextEditWindow.TextEditWindow.textFontBox">
+                                    <code class="sig-name descname">textFontBox</code><span
+                                        class="sig-paren">(</span><em class="sig-param">fontBox</em><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#gui.TextEditWindow.TextEditWindow.textFontBox"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Metoda koja pretvara deo text-a u izabrani font</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>fontBox(String): izabrani font</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="gui.TextEditWindow.TextEditWindow.textItalic">
+                                    <code class="sig-name descname">textItalic</code><span
+                                        class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                     href="#gui.TextEditWindow.TextEditWindow.textItalic"
+                                                                                                     title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Metoda za pretvaranje dela text-a u italic format</p>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="gui.TextEditWindow.TextEditWindow.textSizeBox">
+                                    <code class="sig-name descname">textSizeBox</code><span
+                                        class="sig-paren">(</span><em class="sig-param">sizeBox</em><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#gui.TextEditWindow.TextEditWindow.textSizeBox"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Metoda koja pretvara deo text-a u izabranu velicinu text-a u slucaju da je ta
+                                    vrednost veca od 0</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>sizeBox(String): izabrana velicina text-a</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="gui.TextEditWindow.TextEditWindow.textUnderline">
+                                    <code class="sig-name descname">textUnderline</code><span class="sig-paren">(</span><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#gui.TextEditWindow.TextEditWindow.textUnderline"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Metoda za pretvaranje dela tezt-a u underline format</p>
+                                </dd>
+                            </dl>
+
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-model.Book"></span>
+                    <dl class="class">
+                        <dt id="model.Book.Book">
+                            <em class="property">class </em><code
+                                class="sig-prename descclassname">model.Book.</code><code
+                                class="sig-name descname">Book</code><span class="sig-paren">(</span><em
+                                class="sig-param">name</em><span class="sig-paren">)</span><a class="headerlink"
+                                                                                              href="#model.Book.Book"
+                                                                                              title="Permalink to this definition">¶</a>
+                        </dt>
+                        <dd><p>Klasa naslednica klase Node, predstavlja knjigu</p>
+                            <dl class="simple">
+                                <dt>Attributes:</dt>
+                                <dd><p>path: putanja knjige</p>
+                                </dd>
+                            </dl>
+                            <dl class="method">
+                                <dt id="model.Book.Book.getPath">
+                                    <code class="sig-name descname">getPath</code><span class="sig-paren">(</span><span
+                                        class="sig-paren">)</span><a class="headerlink" href="#model.Book.Book.getPath"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Metoda koja vraca putanju knjige</p>
+                                    <dl class="simple">
+                                        <dt>Return:</dt>
+                                        <dd><p>Putanja knjige</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="model.Book.Book.runRename">
+                                    <code class="sig-name descname">runRename</code><span
+                                        class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                     href="#model.Book.Book.runRename"
+                                                                                                     title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Renamuje stranice da bi se odrzao redosled imena(Strana1,Strana2,…)</p>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="model.Book.Book.setPath">
+                                    <code class="sig-name descname">setPath</code><span class="sig-paren">(</span><em
+                                        class="sig-param">path</em><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                      href="#model.Book.Book.setPath"
+                                                                                                      title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Metoda koja postavlja putanju knjizi</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>path(String): putanja knjige</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-model.Chapter"></span>
+                    <dl class="class">
+                        <dt id="model.Chapter.Chapter">
+                            <em class="property">class </em><code
+                                class="sig-prename descclassname">model.Chapter.</code><code class="sig-name descname">Chapter</code><span
+                                class="sig-paren">(</span><em class="sig-param">name</em><span
+                                class="sig-paren">)</span><a class="headerlink" href="#model.Chapter.Chapter"
+                                                             title="Permalink to this definition">¶</a></dt>
+                        <dd><p>Klasa naslednica klase Node, predstavlja poglavlje</p>
+                            <dl class="method">
+                                <dt id="model.Chapter.Chapter.getIcon">
+                                    <code class="sig-name descname">getIcon</code><span class="sig-paren">(</span><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#model.Chapter.Chapter.getIcon"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Metoda koja postavlja ikonicu poglavlju</p>
+                                    <dl class="simple">
+                                        <dt>Return:</dt>
+                                        <dd><p>QIcon(): ikonica poglavlja</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-model.Node"></span>
+                    <dl class="class">
+                        <dt id="model.Node.Node">
+                            <em class="property">class </em><code
+                                class="sig-prename descclassname">model.Node.</code><code
+                                class="sig-name descname">Node</code><span class="sig-paren">(</span><em
+                                class="sig-param">name</em><span class="sig-paren">)</span><a class="headerlink"
+                                                                                              href="#model.Node.Node"
+                                                                                              title="Permalink to this definition">¶</a>
+                        </dt>
+                        <dd><p>Node u stablu, može se koristiti kao root klasa za dokument, projekat, paket…</p>
+                            <dl class="simple">
+                                <dt>Args:</dt>
+                                <dd><p>name (str): Naziv čvora.</p>
+                                </dd>
+                                <dt>Attributes:</dt>
+                                <dd><p>name (str): naziv node-a
+                                    parent (Node): node na visem nivou hijerarhije
+                                    children (list(Node)): lista node-ova na nizem nivou hijerarhije
+                                    path(str): apsolutna putanja node-a</p>
+                                </dd>
+                            </dl>
+                            <dl class="method">
+                                <dt id="model.Node.Node.addChild">
+                                    <code class="sig-name descname">addChild</code><span class="sig-paren">(</span><em
+                                        class="sig-param">child</em><span class="sig-paren">)</span><a
+                                        class="headerlink" href="#model.Node.Node.addChild"
+                                        title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Dodaje child na kraj liste</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>child(Node): node koji se dodaje</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="model.Node.Node.childAt">
+                                    <code class="sig-name descname">childAt</code><span class="sig-paren">(</span><em
+                                        class="sig-param">row</em><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                     href="#model.Node.Node.childAt"
+                                                                                                     title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Vraca child node na zadatoj poziciji</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>row(int): pozicija node-a u listi</p>
+                                        </dd>
+                                        <dt>Return:</dt>
+                                        <dd><p>Node na zadatoj poziciji (Node); None za neispravnu poziciju</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="model.Node.Node.childCount">
+                                    <code class="sig-name descname">childCount</code><span
+                                        class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                     href="#model.Node.Node.childCount"
+                                                                                                     title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Vraca broj child node-ova</p>
+                                    <dl class="simple">
+                                        <dt>Return:</dt>
+                                        <dd><p>Broj elemenata liste children</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="attribute">
+                                <dt id="model.Node.Node.childInsertStartSignal">
+                                    <code class="sig-name descname">childInsertStartSignal</code><em class="property"> =
+                                    &lt;PySide2.QtCore.Signal object&gt;</em><a class="headerlink"
+                                                                                href="#model.Node.Node.childInsertStartSignal"
+                                                                                title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Signal prilikom dodavanja child node-a</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>parentNode(object): node u koji se dodaje
+                                            addedNode(object): node koji se dodaje</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="attribute">
+                                <dt id="model.Node.Node.childInsertedSignal">
+                                    <code class="sig-name descname">childInsertedSignal</code><em class="property"> =
+                                    &lt;PySide2.QtCore.Signal object&gt;</em><a class="headerlink"
+                                                                                href="#model.Node.Node.childInsertedSignal"
+                                                                                title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Signal prilikom dodavanja child node-a</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>parent(object): node iz kojeg se brise
+                                            position(int): pozicija sa koje se brise</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="attribute">
+                                <dt id="model.Node.Node.childRemoveStartSignal">
+                                    <code class="sig-name descname">childRemoveStartSignal</code><em class="property"> =
+                                    &lt;PySide2.QtCore.Signal object&gt;</em><a class="headerlink"
+                                                                                href="#model.Node.Node.childRemoveStartSignal"
+                                                                                title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Signal prilikom uklanjanja child node-a</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>parentNode(object): node iz kojeg se uklanja
+                                            childNode(object): node koji se uklanja
+                                            position(int): pozicija sa koje se uklanja</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="model.Node.Node.getChildren">
+                                    <code class="sig-name descname">getChildren</code><span
+                                        class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                     href="#model.Node.Node.getChildren"
+                                                                                                     title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Vraca listu child node-ova</p>
+                                    <dl class="simple">
+                                        <dt>Return:</dt>
+                                        <dd><p>Lista children</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="model.Node.Node.getIcon">
+                                    <code class="sig-name descname">getIcon</code><span class="sig-paren">(</span><span
+                                        class="sig-paren">)</span><a class="headerlink" href="#model.Node.Node.getIcon"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Vraca ikonicu za prikaz u stablu</p>
+                                    <dl class="simple">
+                                        <dt>Return:</dt>
+                                        <dd><p>ikonica za prikaz (QIcon)</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="model.Node.Node.getIndex">
+                                    <code class="sig-name descname">getIndex</code><span class="sig-paren">(</span><span
+                                        class="sig-paren">)</span><a class="headerlink" href="#model.Node.Node.getIndex"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Vraca poziciju elementa u listi child-ova roditeljskog elementa</p>
+                                    <dl class="simple">
+                                        <dt>Return:</dt>
+                                        <dd><p>pozicija u listi child-ova parent node-a</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="model.Node.Node.getName">
+                                    <code class="sig-name descname">getName</code><span class="sig-paren">(</span><span
+                                        class="sig-paren">)</span><a class="headerlink" href="#model.Node.Node.getName"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Vraca naziv node-a</p>
+                                    <dl class="simple">
+                                        <dt>Return:</dt>
+                                        <dd><p>Naziv node-a</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="model.Node.Node.getParent">
+                                    <code class="sig-name descname">getParent</code><span
+                                        class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                     href="#model.Node.Node.getParent"
+                                                                                                     title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Vraca roditeljski node</p>
+                                    <dl class="simple">
+                                        <dt>Return:</dt>
+                                        <dd><p>Roditeljski node; None ukoliko je element na vrhu hijerarhije</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="model.Node.Node.insertChild">
+                                    <code class="sig-name descname">insertChild</code><span
+                                        class="sig-paren">(</span><em class="sig-param">position</em>, <em
+                                        class="sig-param">child</em><span class="sig-paren">)</span><a
+                                        class="headerlink" href="#model.Node.Node.insertChild"
+                                        title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Ubacuje child na odredjenu poziciju</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>position(int): pozicija u listi na koju se ubacuje
+                                            child(Node): node koji se ubacuje</p>
+                                        </dd>
+                                        <dt>Return:</dt>
+                                        <dd><p>True ako je uspesno ubacivanje, False za neispravnu poziciju</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="model.Node.Node.removeChild">
+                                    <code class="sig-name descname">removeChild</code><span
+                                        class="sig-paren">(</span><em class="sig-param">position</em><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#model.Node.Node.removeChild"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Izbacuje child sa odredjene pozicije</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>position(int): pozicija u listi sa koje se izbacuje</p>
+                                        </dd>
+                                        <dt>Return:</dt>
+                                        <dd><p>True ako je uspesno izbacivanje, False za neispravnu poziciju</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="model.Node.Node.setChildren">
+                                    <code class="sig-name descname">setChildren</code><span
+                                        class="sig-paren">(</span><em class="sig-param">children</em><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#model.Node.Node.setChildren"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Postavlja listu children</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>children: lista children</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="model.Node.Node.setName">
+                                    <code class="sig-name descname">setName</code><span class="sig-paren">(</span><em
+                                        class="sig-param">name</em><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                      href="#model.Node.Node.setName"
+                                                                                                      title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Postavlja naziv node-a</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>name(string): naziv node-a</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="model.Node.Node.setParent">
+                                    <code class="sig-name descname">setParent</code><span class="sig-paren">(</span><em
+                                        class="sig-param">parent</em><span class="sig-paren">)</span><a
+                                        class="headerlink" href="#model.Node.Node.setParent"
+                                        title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Postavlja roditeljski node</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>parent(Node): roditeljski node</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-model.Page"></span>
+                    <dl class="class">
+                        <dt id="model.Page.Page">
+                            <em class="property">class </em><code
+                                class="sig-prename descclassname">model.Page.</code><code
+                                class="sig-name descname">Page</code><span class="sig-paren">(</span><em
+                                class="sig-param">name</em><span class="sig-paren">)</span><a class="headerlink"
+                                                                                              href="#model.Page.Page"
+                                                                                              title="Permalink to this definition">¶</a>
+                        </dt>
+                        <dd><p>Klasa naslednica klase Node, predstavlja stranu</p>
+                            <dl class="simple">
+                                <dt>Attributes:</dt>
+                                <dd><p>text: text koji stranica sadrzi</p>
+                                </dd>
+                            </dl>
+                            <dl class="method">
+                                <dt id="model.Page.Page.getIcon">
+                                    <code class="sig-name descname">getIcon</code><span class="sig-paren">(</span><span
+                                        class="sig-paren">)</span><a class="headerlink" href="#model.Page.Page.getIcon"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Metoda koja postavlja ikonicu stranici</p>
+                                    <dl class="simple">
+                                        <dt>Return:</dt>
+                                        <dd><p>QIcon(): ikonica stranice</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-model.Picture"></span>
+                    <dl class="class">
+                        <dt id="model.Picture.Picture">
+                            <em class="property">class </em><code
+                                class="sig-prename descclassname">model.Picture.</code><code class="sig-name descname">Picture</code><span
+                                class="sig-paren">(</span><em class="sig-param">name</em><span
+                                class="sig-paren">)</span><a class="headerlink" href="#model.Picture.Picture"
+                                                             title="Permalink to this definition">¶</a></dt>
+                        <dd><p>Klasa naslednica klase Node, predstavlja slika komponentu strane</p>
+                            <dl class="simple">
+                                <dt>Attributes:</dt>
+                                <dd><p>picture: putanja slike
+                                    position: pozicija slike u odnosu na glavni prozor aplikacije</p>
+                                </dd>
+                            </dl>
+                            <dl class="method">
+                                <dt id="model.Picture.Picture.getIcon">
+                                    <code class="sig-name descname">getIcon</code><span class="sig-paren">(</span><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#model.Picture.Picture.getIcon"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Metoda koja postavlja ikonicu slici</p>
+                                    <dl class="simple">
+                                        <dt>Return:</dt>
+                                        <dd><p>QIcon(): ikonica slike</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="model.Picture.Picture.getPicture">
+                                    <code class="sig-name descname">getPicture</code><span
+                                        class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                     href="#model.Picture.Picture.getPicture"
+                                                                                                     title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Vraca putanju slike</p>
+                                    <dl class="simple">
+                                        <dt>Return:</dt>
+                                        <dd><p>Putanja slike</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="model.Picture.Picture.getPosition">
+                                    <code class="sig-name descname">getPosition</code><span
+                                        class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                     href="#model.Picture.Picture.getPosition"
+                                                                                                     title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Vraca apsolutnu poziciju slike</p>
+                                    <dl class="simple">
+                                        <dt>Return:</dt>
+                                        <dd><p>Apsolutna pozicija slike</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="model.Picture.Picture.setPicture">
+                                    <code class="sig-name descname">setPicture</code><span class="sig-paren">(</span><em
+                                        class="sig-param">picture</em><span class="sig-paren">)</span><a
+                                        class="headerlink" href="#model.Picture.Picture.setPicture"
+                                        title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Postavlja putanju slike</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>picture(String): putanja slike</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="model.Picture.Picture.setPosition">
+                                    <code class="sig-name descname">setPosition</code><span
+                                        class="sig-paren">(</span><em class="sig-param">position</em><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#model.Picture.Picture.setPosition"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Postavlja apsolutnu poziciju slike</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>position(QPoint()): apsolutna pozicija slike</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-model.Text"></span>
+                    <dl class="class">
+                        <dt id="model.Text.Text">
+                            <em class="property">class </em><code
+                                class="sig-prename descclassname">model.Text.</code><code
+                                class="sig-name descname">Text</code><span class="sig-paren">(</span><em
+                                class="sig-param">name</em><span class="sig-paren">)</span><a class="headerlink"
+                                                                                              href="#model.Text.Text"
+                                                                                              title="Permalink to this definition">¶</a>
+                        </dt>
+                        <dd><p>Klasa naslednica klase Node, predstavlja text komponentu strane</p>
+                            <dl class="simple">
+                                <dt>Attributes:</dt>
+                                <dd><p>text: tekstualni sadrzaj text-a
+                                    position: pozicija text-a u odnosu na glavni prozor aplikacije</p>
+                                </dd>
+                            </dl>
+                            <dl class="method">
+                                <dt id="model.Text.Text.getIcon">
+                                    <code class="sig-name descname">getIcon</code><span class="sig-paren">(</span><span
+                                        class="sig-paren">)</span><a class="headerlink" href="#model.Text.Text.getIcon"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Metoda koja postavlja ikonicu text-u</p>
+                                    <dl class="simple">
+                                        <dt>Return:</dt>
+                                        <dd><p>QIcon(): ikonica text-a</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="model.Text.Text.getPosition">
+                                    <code class="sig-name descname">getPosition</code><span
+                                        class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                     href="#model.Text.Text.getPosition"
+                                                                                                     title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Vraca apsolutnu poziciju text-a</p>
+                                    <dl class="simple">
+                                        <dt>Return:</dt>
+                                        <dd><p>Apsolutna pozicija text-a</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="model.Text.Text.getText">
+                                    <code class="sig-name descname">getText</code><span class="sig-paren">(</span><span
+                                        class="sig-paren">)</span><a class="headerlink" href="#model.Text.Text.getText"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Vraca tekstualni sadrzaj text-a</p>
+                                    <dl class="simple">
+                                        <dt>Return:</dt>
+                                        <dd><p>Tekstualni sadrzaj text-a</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="model.Text.Text.setPosition">
+                                    <code class="sig-name descname">setPosition</code><span
+                                        class="sig-paren">(</span><em class="sig-param">position</em><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#model.Text.Text.setPosition"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Postavlja apsolutnu poziciju text-a</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>position(QPoint()): apsolutna pozicija text-a</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="model.Text.Text.setText">
+                                    <code class="sig-name descname">setText</code><span class="sig-paren">(</span><em
+                                        class="sig-param">text</em><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                      href="#model.Text.Text.setText"
+                                                                                                      title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Postavlja tekstualni sadrzaj text-u</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>text(String): tekstualni sadrzaj text-a</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-model.Workspace"></span>
+                    <dl class="class">
+                        <dt id="model.Workspace.Workspace">
+                            <em class="property">class </em><code
+                                class="sig-prename descclassname">model.Workspace.</code><code
+                                class="sig-name descname">Workspace</code><span class="sig-paren">(</span><em
+                                class="sig-param">name</em><span class="sig-paren">)</span><a class="headerlink"
+                                                                                              href="#model.Workspace.Workspace"
+                                                                                              title="Permalink to this definition">¶</a>
+                        </dt>
+                        <dd><p>Klasa naslednica klase Node, predstavlja workspace</p>
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-view.tree.HierarchyTreeModel"></span>
+                    <dl class="class">
+                        <dt id="view.tree.HierarchyTreeModel.HierarchyTreeModel">
+                            <em class="property">class </em><code class="sig-prename descclassname">view.tree.HierarchyTreeModel.</code><code
+                                class="sig-name descname">HierarchyTreeModel</code><span class="sig-paren">(</span><em
+                                class="sig-param">root</em><span class="sig-paren">)</span><a class="headerlink"
+                                                                                              href="#view.tree.HierarchyTreeModel.HierarchyTreeModel"
+                                                                                              title="Permalink to this definition">¶</a>
+                        </dt>
+                        <dd><p>Model hijerarhijskog stabla</p>
+                            <dl class="simple">
+                                <dt>Args:</dt>
+                                <dd><p>root (Node): korenski node</p>
+                                </dd>
+                                <dt>Attributes:</dt>
+                                <dd><p>root (Node): korenski node</p>
+                                </dd>
+                            </dl>
+                            <dl class="method">
+                                <dt id="view.tree.HierarchyTreeModel.HierarchyTreeModel.addChild">
+                                    <code class="sig-name descname">addChild</code><span class="sig-paren">(</span><em
+                                        class="sig-param">parent</em>, <em class="sig-param">child</em><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#view.tree.HierarchyTreeModel.HierarchyTreeModel.addChild"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Osvezavanje stabla nakon dodavanja</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>parent(Node): node u koji je izvrseno dodavanje
+                                            child(Node): node koji je dodat</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="view.tree.HierarchyTreeModel.HierarchyTreeModel.beginAddChild">
+                                    <code class="sig-name descname">beginAddChild</code><span class="sig-paren">(</span><em
+                                        class="sig-param">parent</em>, <em class="sig-param">position</em><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#view.tree.HierarchyTreeModel.HierarchyTreeModel.beginAddChild"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Osvezavanje stabla nakon dodavanja</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>parent(Node): node u koji će biti dodat node
+                                            position(int): pozicija na koju će biti dodat node</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="view.tree.HierarchyTreeModel.HierarchyTreeModel.beginRemoveChild">
+                                    <code class="sig-name descname">beginRemoveChild</code><span
+                                        class="sig-paren">(</span><em class="sig-param">parentNode</em>, <em
+                                        class="sig-param">position</em><span class="sig-paren">)</span><a
+                                        class="headerlink"
+                                        href="#view.tree.HierarchyTreeModel.HierarchyTreeModel.beginRemoveChild"
+                                        title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Priprema stabla za uklanjanje node-a</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>parent(Node): node iz kojeg se uklanja node
+                                            position(int): pozicija sa koje se uklanja node</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="view.tree.HierarchyTreeModel.HierarchyTreeModel.calledClear">
+                                    <code class="sig-name descname">calledClear</code><span
+                                        class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                     href="#view.tree.HierarchyTreeModel.HierarchyTreeModel.calledClear"
+                                                                                                     title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Emit-uje signal za clear TreeView-a</p>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="view.tree.HierarchyTreeModel.HierarchyTreeModel.columnCount">
+                                    <code class="sig-name descname">columnCount</code><span
+                                        class="sig-paren">(</span><em class="sig-param">parent</em><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#view.tree.HierarchyTreeModel.HierarchyTreeModel.columnCount"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Vraca broj kolona elementa stabla</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>parent(QModelIndex): indeks elementa ciji se broj kolona trazi</p>
+                                        </dd>
+                                        <dt>Return:</dt>
+                                        <dd><p>Za model namenjen kreiranju stabla uvek vraca 1</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="view.tree.HierarchyTreeModel.HierarchyTreeModel.data">
+                                    <code class="sig-name descname">data</code><span class="sig-paren">(</span><em
+                                        class="sig-param">index</em>, <em class="sig-param">role</em><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#view.tree.HierarchyTreeModel.HierarchyTreeModel.data"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Vraca podatke iz modela za prikaz u viewer-u</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>index(QModelIndex): indeks elementa ciji se podaci traze
+                                            role(QtCore.Qt.ItemDataRole): vrsta podataka koji se traze</p>
+                                        </dd>
+                                        <dt>Return:</dt>
+                                        <dd><p>Naziv cvora za DisplayRole, ikonica za DecorationRole, None za ostalo</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="view.tree.HierarchyTreeModel.HierarchyTreeModel.flags">
+                                    <code class="sig-name descname">flags</code><span class="sig-paren">(</span><em
+                                        class="sig-param">index</em><span class="sig-paren">)</span><a
+                                        class="headerlink" href="#view.tree.HierarchyTreeModel.HierarchyTreeModel.flags"
+                                        title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Podesava dozvoljene nacine pristupa elementu stabla</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>index(QModelIndex): indeks elementa cije se ponasanje definise</p>
+                                        </dd>
+                                        <dt>Return:</dt>
+                                        <dd><p>Dozvoljeni nacini pristupa (Qt.ItemFlag) povezani logickim operatorom
+                                            “ILI”</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="view.tree.HierarchyTreeModel.HierarchyTreeModel.getRoot">
+                                    <code class="sig-name descname">getRoot</code><span class="sig-paren">(</span><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#view.tree.HierarchyTreeModel.HierarchyTreeModel.getRoot"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Vraca korenski node</p>
+                                    <dl class="simple">
+                                        <dt>Return:</dt>
+                                        <dd><p>Korenski node</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="view.tree.HierarchyTreeModel.HierarchyTreeModel.headerData">
+                                    <code class="sig-name descname">headerData</code><span class="sig-paren">(</span><em
+                                        class="sig-param">section</em>, <em class="sig-param">orientation</em>, <em
+                                        class="sig-param">role</em><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                      href="#view.tree.HierarchyTreeModel.HierarchyTreeModel.headerData"
+                                                                                                      title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Vraca podatke za zaglavlje viewer-a</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>section(int): redni broj reda/kolone zaglavlja
+                                            orientation(QtCore.Qt.Orientation): da li je podatak namenjen prikazu u
+                                            zaglavlju reda ili kolone
+                                            role(QtCore.Qt.ItemDataRole): vrsta podataka koji se traze</p>
+                                        </dd>
+                                        <dt>Return:</dt>
+                                        <dd><p>Tekst “Document explorer” za DisplayRole, None za ostalo</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="view.tree.HierarchyTreeModel.HierarchyTreeModel.index">
+                                    <code class="sig-name descname">index</code><span class="sig-paren">(</span><em
+                                        class="sig-param">row</em>, <em class="sig-param">column</em>, <em
+                                        class="sig-param">parent</em><span class="sig-paren">)</span><a
+                                        class="headerlink" href="#view.tree.HierarchyTreeModel.HierarchyTreeModel.index"
+                                        title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Kreira QModelIndex</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>row(int): broj reda elementa
+                                            column(int): broj kolone elementa
+                                            parent(QModelIndex): element u kojem se nalazi element za koji se indeks
+                                            kreira</p>
+                                        </dd>
+                                        <dt>Return:</dt>
+                                        <dd><p>QModelIndex sa instancom klase Node kao vrednoscu internalPointer-a;
+                                            Prazan (nevalidan) QModelIndex za nepostojeci child element na toj
+                                            poziciji</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="view.tree.HierarchyTreeModel.HierarchyTreeModel.parent">
+                                    <code class="sig-name descname">parent</code><span class="sig-paren">(</span><em
+                                        class="sig-param">index</em><span class="sig-paren">)</span><a
+                                        class="headerlink"
+                                        href="#view.tree.HierarchyTreeModel.HierarchyTreeModel.parent"
+                                        title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Vraca indeks roditeljskog elementa</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>index(QModelIndex): indeks elementa ciji se parent trazi</p>
+                                        </dd>
+                                        <dt>Return:</dt>
+                                        <dd><p>QModelIndex sa parent Node-om kao vrednoscu internalPointer-a; prazan
+                                            (nevalidan) QModelIndex ako je index==root</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="view.tree.HierarchyTreeModel.HierarchyTreeModel.removeChild">
+                                    <code class="sig-name descname">removeChild</code><span
+                                        class="sig-paren">(</span><em class="sig-param">parentNode</em>, <em
+                                        class="sig-param">childNode</em>, <em class="sig-param">position</em><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#view.tree.HierarchyTreeModel.HierarchyTreeModel.removeChild"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Osvezavanje stabla nakon uklanjanja, ukoliko je uklonjena stranica takodje
+                                    popravlja imena stranica u tom poglavlju, i emituje signal da je stranica
+                                    obrisana</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>parentNode(Node): node iz kojeg je uklonjen node
+                                            childNode(Node): node koji se uklanja
+                                            position(int): pozicija sa koje je uklonjen node</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="view.tree.HierarchyTreeModel.HierarchyTreeModel.rowCount">
+                                    <code class="sig-name descname">rowCount</code><span class="sig-paren">(</span><em
+                                        class="sig-param">parent=&lt;PySide2.QtCore.QModelIndex(-1</em>, <em
+                                        class="sig-param">-1</em>, <em class="sig-param">0x0</em>, <em
+                                        class="sig-param">QObject(0x0)) &gt;</em><span class="sig-paren">)</span><a
+                                        class="headerlink"
+                                        href="#view.tree.HierarchyTreeModel.HierarchyTreeModel.rowCount"
+                                        title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Vraca broj redova (podelemenata) elementa stabla</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>parent(QModelIndex): indeks elementa ciji se broj podelemenata trazi</p>
+                                        </dd>
+                                        <dt>Return:</dt>
+                                        <dd><p>Broj elemenata</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                        </dd>
+                    </dl>
+
+                    <span class="target" id="module-view.tree.HierarchyTreeView"></span>
+                    <dl class="class">
+                        <dt id="view.tree.HierarchyTreeView.HierarchyTreeView">
+                            <em class="property">class </em><code class="sig-prename descclassname">view.tree.HierarchyTreeView.</code><code
+                                class="sig-name descname">HierarchyTreeView</code><span class="sig-paren">(</span><em
+                                class="sig-param">model</em><span class="sig-paren">)</span><a class="headerlink"
+                                                                                               href="#view.tree.HierarchyTreeView.HierarchyTreeView"
+                                                                                               title="Permalink to this definition">¶</a>
+                        </dt>
+                        <dd><p>Graficki prikaz hijerarhijskog stabla uz implementiran kontekstni meni, i displayer za
+                            sadrzaj stranice</p>
+                            <dl class="method">
+                                <dt id="view.tree.HierarchyTreeView.HierarchyTreeView.Clear">
+                                    <code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#view.tree.HierarchyTreeView.HierarchyTreeView.Clear"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Refresh stranice</p>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="view.tree.HierarchyTreeView.HierarchyTreeView.SelectRoot">
+                                    <code class="sig-name descname">SelectRoot</code><span
+                                        class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                     href="#view.tree.HierarchyTreeView.HierarchyTreeView.SelectRoot"
+                                                                                                     title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Selektovanje koren node</p>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="view.tree.HierarchyTreeView.HierarchyTreeView.getModel">
+                                    <code class="sig-name descname">getModel</code><span class="sig-paren">(</span><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#view.tree.HierarchyTreeView.HierarchyTreeView.getModel"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Vraca tree</p>
+                                    <dl class="simple">
+                                        <dt>Return:</dt>
+                                        <dd><p>Tree</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="view.tree.HierarchyTreeView.HierarchyTreeView.leftButtonPressed">
+                                    <code class="sig-name descname">leftButtonPressed</code><span
+                                        class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                     href="#view.tree.HierarchyTreeView.HierarchyTreeView.leftButtonPressed"
+                                                                                                     title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Prelazak na prethodnu stranu</p>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="view.tree.HierarchyTreeView.HierarchyTreeView.mousePressEvent">
+                                    <code class="sig-name descname">mousePressEvent</code><span
+                                        class="sig-paren">(</span><em class="sig-param">event</em><span
+                                        class="sig-paren">)</span><a class="headerlink"
+                                                                     href="#view.tree.HierarchyTreeView.HierarchyTreeView.mousePressEvent"
+                                                                     title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Redefinisanje mouse pressed event-a.
+                                    Uradjeno jer default-na implementacija rukovanja ovim dogadjajem ne podrazumeva
+                                    deselekciju elementa stabla prilikom klika na praznu povrsinu.</p>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="view.tree.HierarchyTreeView.HierarchyTreeView.openMenu">
+                                    <code class="sig-name descname">openMenu</code><span class="sig-paren">(</span><em
+                                        class="sig-param">position</em><span class="sig-paren">)</span><a
+                                        class="headerlink"
+                                        href="#view.tree.HierarchyTreeView.HierarchyTreeView.openMenu"
+                                        title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Metoda povezana na customContextMenuRequested. Kreira kontekstni meni sa akcijama
+                                    dodavanja, brisanja i promene naziva elemenata.
+                                    Kontekstni meni se prikazuje na poziciji na kojoj se nalazio kursor misa.</p>
+                                    <dl class="simple">
+                                        <dt>Args:</dt>
+                                        <dd><p>position(QPoint): pozicija kursora misa</p>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="view.tree.HierarchyTreeView.HierarchyTreeView.rightButtonPressed">
+                                    <code class="sig-name descname">rightButtonPressed</code><span
+                                        class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                     href="#view.tree.HierarchyTreeView.HierarchyTreeView.rightButtonPressed"
+                                                                                                     title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Prelazak na narednu stranu</p>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="view.tree.HierarchyTreeView.HierarchyTreeView.updateSelection">
+                                    <code class="sig-name descname">updateSelection</code><span
+                                        class="sig-paren">(</span><em class="sig-param">new</em><span class="sig-paren">)</span><a
+                                        class="headerlink"
+                                        href="#view.tree.HierarchyTreeView.HierarchyTreeView.updateSelection"
+                                        title="Permalink to this definition">¶</a></dt>
+                                <dd><p>Promena selekcije</p>
+                                </dd>
+                            </dl>
+
+                            <dl class="method">
+                                <dt id="view.tree.HierarchyTreeView.HierarchyTreeView.updateTxt">
+                                    <code class="sig-name descname">updateTxt</code><span
+                                        class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink"
+                                                                                                     href="#view.tree.HierarchyTreeView.HierarchyTreeView.updateTxt"
+                                                                                                     title="Permalink to this definition">¶</a>
+                                </dt>
+                                <dd><p>Updateovanje status bara, labela za prikaz stranice, sadrzaja text i slika
+                                    komponenti pri promeni selektovane strane</p>
+                                </dd>
+                            </dl>
+
+                        </dd>
+                    </dl>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <div aria-label="main navigation" class="sphinxsidebar" role="navigation">
+        <div class="sphinxsidebarwrapper">
+            <h1 class="logo"><a href="index.html">MuMijA</a></h1>
+
+
+            <h3>Navigation</h3>
+
+            <div class="relations">
+                <h3>Related Topics</h3>
+                <ul>
+                    <li><a href="index.html">Documentation overview</a>
+                        <ul>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="searchbox" role="search" style="display: none">
+                <h3 id="searchlabel">Quick search</h3>
+                <div class="searchformwrapper">
+                    <form action="search.html" class="search" method="get">
+                        <input aria-labelledby="searchlabel" name="q" type="text"/>
+                        <input type="submit" value="Go"/>
+                    </form>
+                </div>
+            </div>
+            <script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+        </div>
+    </div>
+    <div class="clearer"></div>
+</div>
+<div class="footer">
+    &copy;2019, Vladimir Jovin.
+
+    |
+    Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.0</a>
+    &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+
+    |
+    <a href="_sources/code.rst.txt"
+       rel="nofollow">Page source</a>
+</div>
+
+
+</body>
+</html>

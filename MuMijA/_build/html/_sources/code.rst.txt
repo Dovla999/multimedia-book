@@ -1,0 +1,109 @@
+Documentation
+=============
+
+.. automodule:: main_module
+    :members:
+
+.. automodule:: actions.ActionManager
+    :members:
+
+.. automodule:: actions.AddChildAction
+    :members:
+	
+.. automodule:: actions.AddChildAtAction
+    :members:
+	
+.. automodule:: actions.NewBookAction
+    :members:
+	
+.. automodule:: actions.RemoveChildAction
+    :members:
+	
+.. automodule:: actions.RenameNodeAction
+    :members:
+
+.. automodule:: actions.AddChildBefore
+    :members:
+
+.. automodule:: actions.DeleteAction
+    :members:
+
+.. automodule:: actions.file_handler
+    :members:
+	
+.. automodule:: actions.ImportBookAction
+    :members:
+	
+.. automodule:: actions.RenameAction
+    :members:
+
+.. automodule:: actions.SaveAction
+    :members:
+	
+.. automodule:: actions.SaveAsAction
+    :members:
+	
+.. automodule:: gui.EditMenu
+    :members:
+	
+.. automodule:: gui.FileMenu
+    :members:
+	
+.. automodule:: gui.HelpMenu
+    :members:
+	
+.. automodule:: gui.MainWindow
+    :members:
+	
+.. automodule:: gui.MyToolbar
+    :members:
+	
+.. automodule:: gui.MyPictureEdit
+    :members:
+
+.. automodule:: gui.MyTextEdit
+    :members:
+	
+.. automodule:: gui.PictureEditDialog
+    :members:
+	
+.. automodule:: gui.PictureEditLabel
+    :members:
+	
+.. automodule:: gui.PictureEditWindow
+    :members:
+	
+.. automodule:: gui.TextEditDialog
+    :members:
+	
+.. automodule:: gui.TextEditWindow
+    :members:
+	
+.. automodule:: model.Book
+    :members:
+	
+.. automodule:: model.Chapter
+    :members:
+	
+.. automodule:: model.Node
+    :members:
+	
+.. automodule:: model.Page
+    :members:
+	
+.. automodule:: model.Picture
+    :members:
+	
+.. automodule:: model.Text
+    :members:
+	
+.. automodule:: model.Workspace
+    :members:
+
+.. automodule:: view.tree.HierarchyTreeModel
+    :members:
+	
+.. automodule:: view.tree.HierarchyTreeView
+    :members:
+
+	
